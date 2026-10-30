@@ -265,9 +265,11 @@ if prompt:
                         "messages": [
                             (
                                 "user",
-                                f"Based on the following search results about '{prompt}', "
-                                f"pick the most relevant URL and scrape it for deeper content.\n\n"
-                                f"Search Results:\n{search_out[:800]}",
+                                (
+                                    f"Based on the following search results about '{prompt}', "
+                                    f"pick the most relevant URL and scrape it for deeper content.\n\n"
+                                    f"Search Results:\n{search_out[:800]}"
+                                ),
                             )
                         ]
                     }
