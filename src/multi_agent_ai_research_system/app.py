@@ -2,7 +2,12 @@ import time
 
 import streamlit as st
 
-from .agents import build_reader_agent, build_search_agent, critic_chain, writer_chain
+from multi_agent_ai_research_system.agents import (
+    build_reader_agent,
+    build_search_agent,
+    critic_chain,
+    writer_chain,
+)
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
